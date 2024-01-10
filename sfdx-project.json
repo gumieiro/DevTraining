@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "DevTraining",
+  "namespace": "",
+  "sfdcLoginUrl": "https://wise-panda-2kuiq2-dev-ed.my.salesforce.com",
+  "sourceApiVersion": "58.0"
+}

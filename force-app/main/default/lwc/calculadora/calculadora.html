@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-box">
+        <lightning-input type="number" value={number1} onchange={handleChangeNumber1} name="number1" label="Primeiro Número" placeholder="Insira o Primeiro Número"></lightning-input>
+        <lightning-input type="number" value={number2} onchange={handleChangeNumber2} name="number2" label="Primeiro Segundo" placeholder="Insira o Primeiro Segundo"></lightning-input>
+        <div class="slds-var-p-top_small">
+            <lightning-button class="slds-m-left_x-small" variant="brand" onclick={sum} label="Sum"></lightning-button>
+            <lightning-button class="slds-m-left_x-small" variant="brand" onclick={minus} label="Minus"></lightning-button>
+            <lightning-button class="slds-m-left_x-small" variant="brand" onclick={multipliedBy} label="Multiplied by"></lightning-button>
+            <lightning-button class="slds-m-left_x-small" variant="brand" onclick={dividedBy} label="Divided by"></lightning-button>
+            <lightning-button class="slds-p-left_x-small" variant="destructive" onclick={reset} label="Reset" title="Reset" name="reset"></lightning-button>
+        </div>
+        <template if:true={hasTotal}>
+            <div class="slds-var-p-top_small">
+                <lightning-button variant="brand-outline" class="slds-m-left_x-large" label={total} ></lightning-button>
+            </div>
+        </template>
+    </div>
+</template>
